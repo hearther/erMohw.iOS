@@ -1,5 +1,5 @@
 //
-//  gvSecondViewController.h
+//  gvPendingWardVC.h
 //  erMohw
 //
 //  Created by Bunny Lin on 2014/8/11.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "gvPendingVC.h"
 
-@interface gvSecondViewController : UIViewController
-
+@interface gvPendingWardVC : gvPendingVC
 @end
