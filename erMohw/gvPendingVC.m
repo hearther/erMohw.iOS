@@ -11,10 +11,6 @@
 #import "gvLineInfoCollViewCell.h"
 #import "ActionSheetStringPicker.h"
 
-NSArray *erArrayWithGVPendingVCZone(gvPendingVCDisplayZone zone) {
-    return (NSArray *)[ZONE_HOST_ARRAY objectAtIndex:zone];
-}
-
 @interface gvPendingVC ()
 
 @end
@@ -32,10 +28,9 @@ NSArray *erArrayWithGVPendingVCZone(gvPendingVCDisplayZone zone) {
     self.curDisplayStat = -1;
     self.curDisplayZone = -1;
     
+    self.lineView.frame = CGRectMake(0, 60, 320, self.view.frame.size.height-60-self.infoCollView.frame.size.height);
+    self.infoView.frame = CGRectMake(0, 60+self.lineView.frame.size.height, 320, 80);
     
-//    self.lineView.frame = CGRectMake(0, 40, 320, self.view.frame.size.height-40-self.infoCollView.frame.size.height);
-//    self.infoView.frame = CGRectMake(0, 40+self.lineView.frame.size.height, 320, 80);
-
     
     [self quryFun];
 	
@@ -67,8 +62,11 @@ NSArray *erArrayWithGVPendingVCZone(gvPendingVCDisplayZone zone) {
     [[NetworkMM sharedNetworkMM] queryAllPendingInPast24hr:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.allHospInfo = responseObject;
         self.allHospColor = [self genRandomColorArrayWithSize:[self.allHospInfo count]];
+        
         [self updateUIWithStat:gvPendingWard
                           zone:gvZoneAll];
+        
+
         
     }
                                                    failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -106,8 +104,11 @@ NSArray *erArrayWithGVPendingVCZone(gvPendingVCDisplayZone zone) {
     }
     
     
-    [self.curDisplayInfo setText:[STAT_NAME_ARRAY objectAtIndex:stat]];
-    [self.curDisplayZoneLabel setText:[ZONE_NAME_ARRAY objectAtIndex:zone]];
+    [self.curDisplayBtn setTitle:[STAT_NAME_ARRAY objectAtIndex:stat]
+                        forState:UIControlStateNormal];
+    [self.curDisplayZoneBtn setTitle:[ZONE_NAME_ARRAY objectAtIndex:zone]
+                            forState:UIControlStateNormal];
+    
     [self.lineView reloadData];
     [self.infoCollView reloadData];
 

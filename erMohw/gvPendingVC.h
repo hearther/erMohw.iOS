@@ -26,8 +26,10 @@ UICollectionViewDataSource, UICollectionViewDelegate>
 
 
 @property (nonatomic, retain) IBOutlet UILabel *curDisplayInfo;
+@property (nonatomic, retain) IBOutlet UIButton *curDisplayBtn;
 @property gvPendingVCDisplayStatus curDisplayStat;
 @property (nonatomic, retain) IBOutlet UILabel *curDisplayZoneLabel;
+@property (nonatomic, retain) IBOutlet UIButton *curDisplayZoneBtn;
 @property gvPendingVCDisplayZone curDisplayZone;
 
 
