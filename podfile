@@ -1,4 +1,5 @@
 platform :ios, '7.0'
-pod 'JBChartView', '~> 2.7.3'
+#pod 'JBChartView', '~> 2.7.3'
+pod 'JBChartView', :local => "./Pods/JBChartView"
 pod "AFNetworking", "~> 2.0"
 pod 'ActionSheetPicker-3.0', '~> 1.0.15'
