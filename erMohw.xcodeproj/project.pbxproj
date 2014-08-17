@@ -10,7 +10,6 @@
 		66B9805519993DAC009197B8 /* gvLineInfoCollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B9805419993DAC009197B8 /* gvLineInfoCollViewCell.m */; };
 		CC070FB61998D271009625B1 /* NetworkMM.m in Sources */ = {isa = PBXBuildFile; fileRef = CC070FB51998D271009625B1 /* NetworkMM.m */; };
 		CC070FB91998D4B7009625B1 /* ER.m in Sources */ = {isa = PBXBuildFile; fileRef = CC070FB81998D4B7009625B1 /* ER.m */; };
-		CC18C3F11999ED0F0083107C /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC18C3F01999ED0F0083107C /* Reveal.framework */; };
 		CC18C3F31999ED290083107C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC18C3F21999ED290083107C /* CFNetwork.framework */; };
 		CC18C3F51999ED490083107C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC18C3F41999ED490083107C /* QuartzCore.framework */; };
 		CC18C3FB1999F7D70083107C /* gvPendingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC18C3FA1999F7D70083107C /* gvPendingVC.m */; };
@@ -49,7 +48,6 @@
 		CC070FB51998D271009625B1 /* NetworkMM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkMM.m; sourceTree = "<group>"; };
 		CC070FB71998D4B7009625B1 /* ER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ER.h; path = DataStruct/ER.h; sourceTree = "<group>"; };
 		CC070FB81998D4B7009625B1 /* ER.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ER.m; path = DataStruct/ER.m; sourceTree = "<group>"; };
-		CC18C3F01999ED0F0083107C /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../Downloads/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
 		CC18C3F21999ED290083107C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CC18C3F41999ED490083107C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CC18C3F91999F7D70083107C /* gvPendingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gvPendingVC.h; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				CC18C3F31999ED290083107C /* CFNetwork.framework in Frameworks */,
 				CCF8D98A1998B8EB00DA677F /* CoreGraphics.framework in Frameworks */,
 				CCF8D98C1998B8EB00DA677F /* UIKit.framework in Frameworks */,
-				CC18C3F11999ED0F0083107C /* Reveal.framework in Frameworks */,
 				CCF8D9881998B8EB00DA677F /* Foundation.framework in Frameworks */,
 				FD4254E9196042E4AAA53A2A /* libPods.a in Frameworks */,
 			);
@@ -105,7 +102,6 @@
 		CCF8D97B1998B8EA00DA677F = {
 			isa = PBXGroup;
 			children = (
-				CC18C3F01999ED0F0083107C /* Reveal.framework */,
 				CCF8D98D1998B8EB00DA677F /* erMohw */,
 				CCF8D9B21998B8EC00DA677F /* erMohwTests */,
 				CCF8D9861998B8EB00DA677F /* Frameworks */,
